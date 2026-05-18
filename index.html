@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Full-Stack Developer building websites and tools that help small businesses grow online." />
+  <title>King Tatakosi — Full-Stack Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>   
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav" role="banner">
+    <div class="container nav__inner">
+      <a href="#" class="nav__logo">King's digital solutions<span>.</span></a>
+
+      <nav aria-label="Primary navigation">
+        <ul class="nav__links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact" class="nav__cta">Let's Talk</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home" aria-label="Introduction">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="container hero__inner">
+
+        <div class="hero__content">
+          <div class="hero__badge">
+            <span class="hero__dot" aria-hidden="true"></span>
+            Available for projects
+          </div>
+
+          <h1 class="hero__heading">
+            Helping businesses<br>
+            <em>grow online</em> through<br>
+            clean web experiences.
+          </h1>
+
+          <p class="hero__sub">
+            I'm a frontend developer who builds fast, effective websites
+            and tools — so small businesses can focus on what matters:
+            serving their customers.
+          </p>
+
+          <div class="hero__cta">
+            <a href="#projects" class="btn btn--primary">
+              View My Work
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#contact" class="btn btn--ghost">Get In Touch</a>
+          </div>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__avatar-ring">
+            <img class="hero__avatar-img" src="images/my-profile.webp" alt="King Tatakosi" />
+          </div>
+        </div>
+
+      </div>
+
+      <div class="hero__scroll-hint" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+
+        <div class="section-intro" data-reveal>
+          <span class="eyebrow">About Me</span>
+          <h2 class="section-heading" id="about-heading">
+            Developer by skill.<br>Problem-solver by nature.
+          </h2>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__body" data-reveal data-delay="1">
+            <p>
+              I got into web development because I saw how many great small businesses
+              were losing customers simply because their online presence didn't reflect
+              the quality of what they do. That disconnect pushed me to learn the craft —
+              and to stay focused on outcomes, not just code.
+            </p>
+            <p>
+              Today I build responsive websites that load fast, look professional, and
+              actually convert visitors into customers. I'm also developing practical
+              internal tools — like inventory trackers and debtor management apps — to
+              help businesses run smoother day-to-day.
+            </p>
+            <p>
+              I'm currently deepening my skills in React and backend development,
+              always with the same question in mind: <em>how does this help the business?</em>
+            </p>
+          </div>
+
+          <div class="about__stats" data-reveal data-delay="2">
+            <div class="stat">
+              <div class="stat__display">
+                <span class="stat__number" data-count="1"></span>
+              </div>
+              <div class="stat__label">Projects completed</div>
+            </div>
+            <div class="stat">
+              <div class="stat__display">
+                <span class="stat__number" data-count="2">0</span><span class="stat__suffix">+</span>
+              </div>
+              <div class="stat__label">Years learning &amp; building</div>
+            </div>
+            <div class="stat">
+              <div class="stat__display">
+                <span class="stat__number" data-count="100">0</span><span class="stat__suffix">%</span>
+              </div>
+              <div class="stat__label">Mobile-first approach</div>
+            </div>
+            <div class="stat">
+              <div class="stat__display">
+                <span class="stat__number stat__number--word">SME</span>
+              </div>
+              <div class="stat__label">Focus on small businesses</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section section--alt" id="services" aria-labelledby="services-heading">
+      <div class="container">
+
+        <div class="section-intro" data-reveal>
+          <span class="eyebrow">What I Offer</span>
+          <h2 class="section-heading" id="services-heading">Services built around<br>real business needs.</h2>
+          <p class="section-sub">
+            Every service I offer is designed to deliver measurable value —
+            more visibility, more customers, and smoother operations.
+          </p>
+        </div>
+
+        <div class="services__grid">
+
+          <div class="service-card" data-reveal data-delay="1">
+            <span class="service-card__num">01</span>
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                <path d="M8 21h8M12 17v4"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Business Websites</h3>
+            <p class="service-card__desc">
+              Clean, fast, mobile-friendly websites that present your business
+              professionally and turn visitors into paying customers. From landing pages
+              to multi-section sites.
+            </p>
+          </div>
+
+          <div class="service-card" data-reveal data-delay="2">
+            <span class="service-card__num">02</span>
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"/>
+                <path d="m21 21-4.35-4.35"/>
+                <path d="M11 8v6M8 11h6"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Online Visibility</h3>
+            <p class="service-card__desc">
+              Help getting your business found on Google — through well-structured,
+              SEO-ready pages, Google Business Profile setup, and performance-optimised
+              code that search engines favour.
+            </p>
+          </div>
+
+          <div class="service-card" data-reveal data-delay="3">
+            <span class="service-card__num">03</span>
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2H2v10h10V2z"/>
+                <path d="M22 12h-10v10h10V12z"/>
+                <path d="M12 12H2v10h10V12z"/>
+                <path d="M22 2h-10v10h10V2z"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Simple Web Tools</h3>
+            <p class="service-card__desc">
+              Custom browser-based tools tailored to your workflow —
+              inventory management, debtor tracking, invoice generators, and
+              other practical apps that save time and reduce errors.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+
+        <div class="section-intro" data-reveal>
+          <span class="eyebrow">Work</span>
+          <h2 class="section-heading" id="projects-heading">A few things I've built.</h2>
+          <p class="section-sub">
+            Representative projects — real or practice — that show how I
+            approach problems and apply my skills.
+          </p>
+        </div>
+
+        <div class="projects__grid">
+ <article class="project-card" data-reveal data-delay="1">
+            <div class="project-card__thumb project-card__thumb--violet" aria-hidden="true">
+              <img src="images/vendapal.webp" style="object-position: center top; object-fit: cover;"/>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__header">
+                <h3 class="project-card__title">VendaPal — Business Tool</h3>
+                <a href="https://king-tatakosi.github.io/vendapal-app/" class="project-card__arrow" aria-label="View VendaPal project demo" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                </a>
+              </div>
+              <p class="project-card__desc">
+                A simple client-side app helping small business owners track inventory levels, customer and supplier debts and product expiry —
+                all stored locally in the browser.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">React.js</span>
+
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section--alt" id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+
+        <div class="section-intro" data-reveal>
+          <span class="eyebrow">Skills</span>
+          <h2 class="section-heading" id="skills-heading">My current toolkit.</h2>
+        </div>
+
+        <div class="skills__layout">
+
+          <div class="skills__list" id="skillBars" data-reveal data-delay="1">
+
+            <div class="skill-item">
+              <div class="skill-item__header">
+                <span>HTML5</span>
+                <span class="skill-item__pct">90%</span>
+              </div>
+              <div class="skill-item__bar">
+                <div class="skill-item__fill" data-width="90"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-item__header">
+                <span>CSS3 &amp; Responsive Design</span>
+                <span class="skill-item__pct">85%</span>
+              </div>
+              <div class="skill-item__bar">
+                <div class="skill-item__fill" data-width="85"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-item__header">
+                <span>JavaScript (ES6+)</span>
+                <span class="skill-item__pct">95%</span>
+              </div>
+              <div class="skill-item__bar">
+                <div class="skill-item__fill" data-width="95"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-item__header">
+                <span>Git &amp; GitHub</span>
+                <span class="skill-item__pct">70%</span>
+              </div>
+              <div class="skill-item__bar">
+                <div class="skill-item__fill" data-width="70"></div>
+              </div>
+            </div>
+
+             <div class="skill-item">
+              <div class="skill-item__header">
+                <span>React.js</span>
+                <span class="skill-item__pct">95%</span>
+              </div>
+              <div class="skill-item__bar">
+                <div class="skill-item__fill" data-width="95"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="skills__text" data-reveal data-delay="2">
+            <p>
+              My foundation is solid: I write clean, semantic HTML that search engines
+              love, craft CSS layouts that adapt beautifully across every screen size,
+              and use JavaScript to add real interactivity — form validation, dynamic
+              content, local data storage, and more.
+            </p>
+            <p>
+              I'm currently in the middle of learning React Native, which will open the door
+              to more dynamic, component-driven applications. After that, Node.js and
+              databases will let me build full end-to-end products for clients.
+            </p>
+            <p>
+              I believe in getting the fundamentals absolutely right before moving on —
+              because a great user experience starts with great code structure, not
+              just the newest framework.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <div class="section-intro" data-reveal>
+          <span class="eyebrow">Contact</span>
+          <h2 class="section-heading" id="contact-heading">Let's work together.</h2>
+        </div>
+
+        <div class="contact__layout">
+
+          <div class="contact__info" data-reveal data-delay="1">
+            <p>
+              Have a project in mind? Want to get your business a professional
+              online presence? Or just want to chat about what's possible?
+              Send me a message — I read every one.
+            </p>
+
+            <a
+              href="https://wa.me/233558538437?text=Hi%20there!%20I%20came%20across%20your%20portfolio%20and%20would%20love%20to%20discuss%20a%20potential%20project."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact__whatsapp"
+              aria-label="Message on WhatsApp"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+              Chat on WhatsApp
+            </a>
+          </div>
+
+          <form class="form" id="contactForm" novalidate aria-label="Contact form" data-reveal data-delay="2">
+            <div class="form__group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Mensah" required autocomplete="name" />
+            </div>
+
+            <div class="form__group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" required autocomplete="email" />
+            </div>
+
+            <div class="form__group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell me about your project or idea..." required></textarea>
+            </div>
+
+            <div class="form__status" id="formStatus" role="alert" aria-live="polite"></div>
+
+            <button type="submit" class="btn btn--primary" style="align-self:flex-start;">
+              Send Message
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <p class="footer__copy">
+        &copy; <span id="year"></span> King Tatakosi. Built with care.
+      </p>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    /* ---- Year ---- */
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    /* ---- Nav: solidify on scroll ---- */
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('nav--scrolled', window.scrollY > 40);
+    }, { passive: true });
+
+    /* ---- Mobile nav toggle ---- */
+    const toggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    toggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', isOpen);
+      toggle.classList.toggle('is-open', isOpen);
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('is-open');
+        toggle.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    /* ---- Scroll reveal ---- */
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -60px 0px' });
+
+    document.querySelectorAll('[data-reveal]').forEach(el => revealObserver.observe(el));
+
+    /* ---- Skill bars ---- */
+    const fills = document.querySelectorAll('.skill-item__fill');
+    const skillSection = document.getElementById('skillBars');
+
+    const barObserver = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          fills.forEach(fill => { fill.style.width = fill.dataset.width + '%'; });
+          obs.disconnect();
+        }
+      });
+    }, { threshold: 0.3 });
+
+    if (skillSection) barObserver.observe(skillSection);
+
+    /* ---- Animated stat counters ---- */
+    const statObserver = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        const target = +el.dataset.count;
+        const duration = 1200;
+        const start = performance.now();
+        const tick = (now) => {
+          const t = Math.min((now - start) / duration, 1);
+          const eased = 1 - Math.pow(1 - t, 3);
+          el.textContent = Math.round(eased * target);
+          if (t < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+        obs.unobserve(el);
+      });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll('[data-count]').forEach(el => statObserver.observe(el));
+
+    /* ---- Contact form ---- */
+    const form = document.getElementById('contactForm');
+    const statusEl = document.getElementById('formStatus');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name    = form.name.value.trim();
+      const email   = form.email.value.trim();
+      const message = form.message.value.trim();
+
+      if (!name || !email || !message) {
+        showStatus('Please fill in all fields.', 'error');
+        return;
+      }
+
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        showStatus('Please enter a valid email address.', 'error');
+        return;
+      }
+
+      showStatus("Message sent! I'll get back to you within 24 hours.", 'success');
+      form.reset();
+    });
+
+    function showStatus(msg, type) {
+      statusEl.textContent = msg;
+      statusEl.className = 'form__status ' + type;
+      statusEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  </script>
+
+</body>
+</html>
