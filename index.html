@@ -228,8 +228,10 @@
 
         <div class="projects__grid">
  <article class="project-card" data-reveal data-delay="1">
-            <div class="project-card__thumb project-card__thumb--violet" aria-hidden="true">
-              <img src="images/vendapal.webp" style="object-position: center top; object-fit: cover;"/>
+            <div class="project-card__thumb project-card__thumb--violet">
+              <a href="https://king-tatakosi.github.io/vendapal-app/" aria-label="View VendaPal project demo" target="_blank" rel="noopener noreferrer">
+                <img src="images/vendapal.webp" style="object-position: center top; object-fit: cover;" />
+              </a>
             </div>
             <div class="project-card__body">
               <div class="project-card__header">
@@ -420,6 +422,7 @@
     </div>
   </footer>
 
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   <script>
     /* ---- Year ---- */
     document.getElementById('year').textContent = new Date().getFullYear();
@@ -497,6 +500,12 @@
     document.querySelectorAll('[data-count]').forEach(el => statObserver.observe(el));
 
     /* ---- Contact form ---- */
+    const EMAILJS_SERVICE_ID = 'service_qkaf3vr';
+    const EMAILJS_TEMPLATE_ID = 'template_1wd6cnb';
+    const EMAILJS_PUBLIC_KEY = 'kmSRuN9N-LzkejUy-';
+
+    emailjs.init(EMAILJS_PUBLIC_KEY);
+
     const form = document.getElementById('contactForm');
     const statusEl = document.getElementById('formStatus');
 
@@ -516,8 +525,19 @@
         return;
       }
 
-      showStatus("Message sent! I'll get back to you within 24 hours.", 'success');
-      form.reset();
+      if (EMAILJS_SERVICE_ID === 'YOUR_SERVICE_ID' || EMAILJS_TEMPLATE_ID === 'YOUR_TEMPLATE_ID' || EMAILJS_PUBLIC_KEY === 'YOUR_PUBLIC_KEY') {
+        showStatus('EmailJS is not configured yet. Add your service, template, and public key.', 'error');
+        return;
+      }
+
+      emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form)
+        .then(() => {
+          showStatus("Message sent! I'll get back to you within 24 hours.", 'success');
+          form.reset();
+        }, (error) => {
+          console.error('EmailJS error:', error);
+          showStatus('Something went wrong while sending your message. Please try again later.', 'error');
+        });
     });
 
     function showStatus(msg, type) {
