@@ -1,0 +1,21 @@
+# King Tatakosi — Frontend Developer Portfolio
+
+> Frontend developer building fast, effective websites and practical web tools that help small businesses grow online.
+
+King Tatakosi builds responsive, professional websites that convert visitors into customers, along with practical browser-based tools (inventory trackers, debtor management apps) for small and medium-sized businesses.
+
+## Services
+- Business Websites: clean, fast, mobile-friendly websites, from landing pages to multi-section sites.
+- Online Visibility: SEO-ready pages, Google Business Profile setup, performance-optimised code.
+- Simple Web Tools: custom browser-based tools — inventory management, debtor tracking, invoice generators.
+
+## Projects
+- [VendaPal](https://king-tatakosi.github.io/vendapal-app/): offline-first business tool for tracking inventory, customer/supplier debts, and product expiry.
+- [Royal Hawk Hotel](https://royalhawk-hotel.vercel.app/): a demonstrative hotel landing page designed for clear conversion and a polished mobile experience.
+
+## Skills
+HTML5, CSS3 & responsive design, JavaScript (ES6+), React.js, Git & GitHub. Currently deepening skills in React Native, with Node.js and databases next.
+
+## Contact
+- Portfolio: https://my-portfolio-snowy-iota-77.vercel.app
+- WhatsApp: https://wa.me/233558538437
