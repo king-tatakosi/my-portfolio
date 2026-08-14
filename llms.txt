@@ -14,8 +14,8 @@ King Tatakosi builds responsive, professional websites that convert visitors int
 - [Royal Hawk Hotel](https://royalhawk-hotel.vercel.app/): a demonstrative hotel landing page designed for clear conversion and a polished mobile experience.
 
 ## Skills
-HTML5, CSS3 & responsive design, JavaScript (ES6+), React.js, Git & GitHub. Currently deepening skills in React Native, with Node.js and databases next.
+HTML5, CSS3 & responsive design, JavaScript (ES6+), React.js, Git & GitHub. Currently deepening skills in Node.js and databases next.
 
 ## Contact
-- Portfolio: https://my-portfolio-snowy-iota-77.vercel.app
+- Portfolio: https://kingtatah.online
 - WhatsApp: https://wa.me/233558538437
