@@ -1,0 +1,18 @@
+node_modules/
+.git/
+.claude/
+
+# Local environment and machine files
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+
+# Logs and generated output
+*.log
+coverage/
+dist/
+build/
+lighthouse-report.json
+*.report.html
